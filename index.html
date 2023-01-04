@@ -485,16 +485,15 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <div class="modal-container">
           <button class="modal-close" type="submit" data-modal-close>
           <svg width="11" height="11">
             <use href="./images/icon.svg#close-black"></use>
           </svg>     
-        </button>
+          </button>
 
-        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+          <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
 
-        <form class="user-form" autocomplete="on">
+          <form class="user-form" autocomplete="on">
           <label class="modal-label" for="user-name">Ім'я</label>
           <div class="user-form-box">
             <input class="user-form-input" type="text" id="user-name" name="user-name" required minlength="3" maxlength="25" autofocus>
@@ -507,7 +506,7 @@
           <label class="modal-label" for="user-phone">Телефон</label>
           <div class="user-form-box">
             <input class="user-form-input"  type="tel" id="user-phone" name="user-phone" required>
-          <svg class=" user-form-icon" width="12" height="12">
+          <svg class=" user-form-icon" width="13" height="13">
             <use href="./images/icon.svg#user-phone">
             </use>
           </svg>
@@ -516,30 +515,25 @@
           <label class="modal-label" for="user-email">Пошта</label>
           <div class="user-form-box">
             <input class="user-form-input"  type="email" id="user-email" name="user-email" required>
-          <svg class=" user-form-icon" width="12" height="12">
+          <svg class=" user-form-icon" width="15" height="12">
             <use href="./images/icon.svg#user-email">
             </use>
           </svg>
           </div>
-          
              <label class="modal-label" for="user-modal-textarea">Коментар</label>
-               <textarea  class="user-form-textarea" name="user-modal-textarea" id="user-modal-textarea" placeholder="Введіть текст">
-               </textarea>
+               <textarea class="user-form-textarea" name="user-modal-textarea" id="user-modal-textarea" placeholder="Введіть текст"></textarea>
 
                <label class="term-checkbox-labl" for="term-checkbox">
-                <input class="checkbox visually-hidden" id="term-checkbox" type="checkbox" name="term-checkbox" required>
+                <input class="checkbox" id="term-checkbox" type="checkbox" name="term-checkbox" required>
                 Погоджуюся з розсилкою та приймаю
-                <a class="term-checkbox-link" href="#">Умови договору</a>
+                <a class="term-checkbox-link" href="#" rel="nofollow noopener noreferrer">Умови договору</a>
                 <svg class="term-checkbox-icon" width="11" height="8">
                 <use href="./images/icon.svg#Check">
                 </use>
               </svg>
               </label>
-             
               <button class="modal-submit" type="submit">Відправити</button>
-        </form>
-        </div>
-
+          </form>
       </div>
     </div>
     <script src="./modal.js"></script>

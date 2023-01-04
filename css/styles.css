@@ -31,7 +31,6 @@ body {
 }
 
 
-
 /* Стили для обнуления верхних отступов у элементов */
 h1,
 h2,
@@ -358,7 +357,6 @@ color: var(--hover-color);
 }
 
 .footer-subscribe {
-    width: 580px;
     height: auto;
     margin-left: 93px;
 }
@@ -398,6 +396,7 @@ color: var(--hover-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
+    letter-spacing: 0.06em;
     color: var(--white-cololr);
 
     background: var(--hover-color);
@@ -947,8 +946,7 @@ color: var(--hover-color);
 
     width: 100%;
     max-width: 528px;
-    height: 100%;
-    max-height: 581px;
+
     padding: 40px;
 
     background-color: var(--white-cololr);
@@ -957,8 +955,7 @@ color: var(--hover-color);
 
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition-duration) var(--t-timing-f);
-    
-    overflow: auto;
+
 }
 
 .backdrop.is-hidden .modal 
@@ -1111,6 +1108,7 @@ transition-timing-function: var(--t-timing-f);
     text-align: center;
     width: 100%;
     padding-left: 20px;
+    margin-bottom: 30px;
 
     font-family: 'Roboto';
         font-style: normal;
@@ -1122,12 +1120,26 @@ transition-timing-function: var(--t-timing-f);
         color: var(--text-articl-color);
 }
 
+.checkbox
+{
+    appearance: none;
+}
+.checkbox:focus ~.term-checkbox-icon,
+.checkbox:active ~.term-checkbox-icon,
+.checkbox:hover ~.term-checkbox-icon
+{
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+ 
+        border: 2px solid #212121;
+}
+
 .checkbox:checked ~ .term-checkbox-icon
 {
     background-color: var(--hover-color);
     background-origin: border-box;
     border-color: var(--hover-color);
-    border-radius: 2px;
+
+
 }
 
 .term-checkbox-link
@@ -1156,11 +1168,14 @@ height: 15px;
 
 
 background: var(--white-cololr);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-    border: 2px solid #212121;
+    border-radius: 2px;
+    border: 1.5px solid #212121;
     fill: var(--white-cololr);
 
+    transition: background var(--transition-duration) var(--t-timing-f),
+    border-radius var(--transition-duration) var(--t-timing-f),
+    border var(--transition-duration) var(--t-timing-f),
+    fill var(--transition-duration) var(--t-timing-f);
 }
 
 
@@ -1170,7 +1185,6 @@ background: var(--white-cololr);
     width: 200px;
     height: 50px;
     margin: 0 auto;
-    margin-top: 30px;
     padding: 0%;
 
     font-family: 'Roboto';
